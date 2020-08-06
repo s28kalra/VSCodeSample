@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input (click)='change(true)' type="radio" name='rb'>Valid
+    <input (click)='change(false)'type="radio" name='rb'>Invalid
+
+    <div *ngIf='isValid'>
+        <b>You are valid</b>
+    </div>
+
+    <div *ngIf='!isValid'>
+        <b>You are not valid</b>
+    </div>
+    
+
+    <div *ngFor='let c of cities'>
+        <p> {{c}} </p>
+
+    </div>
+
+
+
+</body>
+</html>
